@@ -1,8 +1,7 @@
 const Koa = require('koa');
-const {MongoClient} = require("mongodb");
+const dbfile = require('/dal/index.js');
 
-const client = new MongoClient('')
-
+dbfile;
 const app = new Koa();
 
 app.use((ctx) => {
